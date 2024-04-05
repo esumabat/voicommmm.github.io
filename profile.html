@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=”utf-8″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sectionstyle.css"/>
+    <link rel="icon" type="image/x-icon" href="voicommicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>profile</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="user">
+                <img src="voicommicon.png" alt="me" class="user-img">
+                <span>Voi Comm</span>
+            </div>
+                <i class="bx bx-menu" id="btn"></i>
+            <ul>
+                <li>
+                    <a href="#main">
+                        <i class='bx bxs-home'></i>
+                        <span class="nav-item">Home</span>
+                    </a>
+                        <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-chat'></i>
+                        <span class="nav-item">CommSpace</span>
+                    </a>
+                        <span class="tooltip">CommSpace</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-book-bookmark' ></i>
+                        <span class="nav-item">Lectures</span>
+                    </a>
+                        <span class="tooltip">Lectures</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user-pin' id="profile-btn"></i>
+                        <span class="nav-item">Profile</span>
+                    </a>
+                        <span class="tooltip">Profile</span>
+                </li><br><br><br><br><br><br><br><br><br><br><br>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-door-open'></i>
+                        <span class="nav-item">Logout</span>
+                    </a>
+                        <span class="tooltip">Logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+<main></main>
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+    let profile = document.querySelector('.header .fles .profile');
+    document.querySelector('#user-btn').onclick = () =>{
+        profile.classList.toggle('active');
+    }
+
+    window.onscroll = () =>{
+        profile.classList.remove('active')
+    }
+</script>
+</html>

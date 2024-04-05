@@ -1,0 +1,27 @@
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.lesson1 {
+    background-color: #1b0847;
+    border: 1px solid #cccccc59;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+}
+
+.lesson h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sign-img {
+    width:400px;
+    height: 100px;
+}
